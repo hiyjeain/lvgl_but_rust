@@ -1,0 +1,20 @@
+[package]
+name = "lvgl_but_rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "lvgl_but_rust"
+crate-type = ["staticlib"]
+
+[build-dependencies]
+bindgen = "0.64.0"
+
+[features]
+default = ['lv_tick_custom']
+lv_tick_custom = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sdl2 = "0.35.2"
