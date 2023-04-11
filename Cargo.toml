@@ -11,7 +11,11 @@ crate-type = ["staticlib"]
 bindgen = "0.64.0"
 
 [features]
-default = ['lv_tick_custom']
+default = [
+    'lv_tick_custom',
+    'LV_ARCH_64',
+]
+LV_ARCH_64 = []
 lv_tick_custom = []
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

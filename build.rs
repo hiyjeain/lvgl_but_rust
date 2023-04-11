@@ -32,6 +32,7 @@ fn main() {
         .blocklist_function("lv_pow")
         .blocklist_function("lv_map")
         .blocklist_function("lv_rand")
+        .blocklist_function("_lv_ll.*")
         // Tell cargo to invalidate the built crate whenever any of the
         // included header files changed.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
